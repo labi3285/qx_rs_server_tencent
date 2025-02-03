@@ -1,0 +1,33 @@
+[package]
+name = "qx_rs_server_tencent"
+version = "0.1.0"
+edition = "2021"
+
+authors = ["labi3285 <766043285@qq.com>"]
+description = "best practice of server wechat api in rust."
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/labi3285/qx_rs_server_tencent"
+homepage = "https://github.com/labi3285/qx_rs_server_tencent"
+keywords = ["server", "wechat"]
+categories = ["web-programming"]
+
+[dependencies]
+
+#qx_rs_server = "0.1.0"
+qx_rs_server = { path = "../qx_rs_server" }
+
+tokio = { version = "1.37.0", features = ["full"] }
+
+tracing = "0.1.40"
+serde = { version = "1.0.217", features = ["derive"] }
+serde_json = "1.0.117"
+serde_with = { version = "3.8.1", features = ["chrono"] }
+serde_repr = "0.1.19"
+
+hmac = "0.12.1"
+sha2 = "0.10.8"
+
+
+
+
+
